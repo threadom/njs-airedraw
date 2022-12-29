@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+    <!-- Inclure la bibliothèque TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.5.0/dist/tf.min.js"></script>
+</head>
+
+<body>
+    <!-- Créer un formulaire pour sélectionner l'image d'entrée -->
+    <form>
+        <label for="input-image">Sélectionnez une image :</label><br>
+        <input type="file" id="input-image" accept="image/*">
+    </form>
+
+    <!-- Créer un bouton pour lancer le transfert de style -->
+    <button onclick="styleTransfer()">Appliquer le transfert de style</button>
+
+    <!-- Créer un canvas pour afficher l'image de sortie -->
+    <canvas id="output-canvas"></canvas>
+
+    <!-- Définir la fonction de transfert de style -->
+    <script src="script.js"></script>
+</body>
+
+</html>
