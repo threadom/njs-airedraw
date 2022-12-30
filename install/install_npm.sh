@@ -1,5 +1,5 @@
 # **************************************************
-# * Test argument and move to existing parent path 
+# * Test argument and move to app path 
 # **************************************************
 
 if [ $# -eq 0 ]; then
@@ -15,6 +15,8 @@ else
     exit 1
 fi
 
+cd app
+
 # **************************************************
 # * Installation de Npm
 # **************************************************
@@ -24,4 +26,6 @@ fi
 #npm cache clean --force
 #npm update -g npm
 sudo snap install node
+npm install -g npm
+
 npm init -y

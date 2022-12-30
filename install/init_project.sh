@@ -18,9 +18,7 @@ fi
 cd app
 
 # **************************************************
-# * Installation de Pnpm
+# * Project initialization
 # **************************************************
 
-npm install -g pnpm
-pnpm update pnpm
-pnpm setup
+pnpm init -y

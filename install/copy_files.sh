@@ -1,5 +1,5 @@
 # **************************************************
-# * Test argument and move to app path 
+# * Test argument and move to root path 
 # **************************************************
 
 if [ $# -eq 0 ]; then
@@ -15,12 +15,8 @@ else
     exit 1
 fi
 
-cd app
-
 # **************************************************
-# * Installation de Pnpm
+# * Copy default files
 # **************************************************
 
-npm install -g pnpm
-pnpm update pnpm
-pnpm setup
+cat ./install/default_files > ./app

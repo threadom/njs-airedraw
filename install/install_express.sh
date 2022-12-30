@@ -1,5 +1,5 @@
 # **************************************************
-# * Test argument and move to existing parent path 
+# * Test argument and move to app path 
 # **************************************************
 
 if [ $# -eq 0 ]; then
@@ -15,9 +15,13 @@ else
     exit 1
 fi
 
+cd app
+
 # **************************************************
-# * Installation de Tensorflow
+# * Installation de Express
 # **************************************************
 
-pnpm install seedrandom
-pnpm install @tensorflow/tfjs
+npm install --save express
+pnpm install --save express
+npm install --save handlebars express-handlebars
+pnpm install --save handlebars express-handlebars

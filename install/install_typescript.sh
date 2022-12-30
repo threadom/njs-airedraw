@@ -1,5 +1,5 @@
 # **************************************************
-# * Test argument and move to existing parent path 
+# * Test argument and move to app path 
 # **************************************************
 
 if [ $# -eq 0 ]; then
@@ -15,11 +15,13 @@ else
     exit 1
 fi
 
+cd app
+
 # **************************************************
 # * Installation de Typescript
 # **************************************************
 
-npm install -g typescript
+#npm install -g typescript
 pnpm install -g typescript
-npm install -save-dev ts-loader
-pnpm install -D ts-loader
+#npm install --save-dev ts-loader
+pnpm install --save-dev ts-loader

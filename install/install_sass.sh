@@ -1,5 +1,5 @@
 # **************************************************
-# * Test argument and move to existing parent path 
+# * Test argument and move to app path 
 # **************************************************
 
 if [ $# -eq 0 ]; then
@@ -15,11 +15,13 @@ else
     exit 1
 fi
 
+cd app
+
 # **************************************************
 # * Installation de Sass
 # **************************************************
 
-npm install -g node-sass
+#npm install -g node-sass
 pnpm install -g node-sass
-npm install -save-dev sass-loader
-pnpm install -D sass-loader
+#npm install --save-dev sass-loader
+pnpm install --save-dev sass-loader
