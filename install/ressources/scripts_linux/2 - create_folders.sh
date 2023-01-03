@@ -1,6 +1,4 @@
-# **************************************************
-# * Test argument and move to root path 
-# **************************************************
+# Test argument and move to root path 
 
 if [ $# -eq 0 ]; then
     echo "Error: No arguments provided"
@@ -14,6 +12,8 @@ else
     echo "Path does not exist"
     exit 1
 fi
+
+# Create directories
 
 mkdir ./app > /dev/null
 mkdir ./app/src > /dev/null

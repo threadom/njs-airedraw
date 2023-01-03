@@ -1,6 +1,4 @@
-# **************************************************
-# * Test argument and move to app path 
-# **************************************************
+# Test argument and move to app path 
 
 if [ $# -eq 0 ]; then
     echo "Error: No arguments provided"
@@ -16,5 +14,7 @@ else
 fi
 
 cd app
+
+# Package.json update
 
 node ../install/merge_json.js package.json ../install/package.json

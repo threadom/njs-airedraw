@@ -1,6 +1,4 @@
-# **************************************************
-# * Test argument and move to app path 
-# **************************************************
+# Test argument and move to app path 
 
 if [ $# -eq 0 ]; then
     echo "Error: No arguments provided"
@@ -17,9 +15,7 @@ fi
 
 cd app
 
-# **************************************************
-# * Installation de Sass
-# **************************************************
+# Sass installation
 
 #npm install -g node-sass
 pnpm install -g node-sass

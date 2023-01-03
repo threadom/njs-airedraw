@@ -1,7 +1,7 @@
 current_path=$(dirname $0)
 
-./copy_files.sh $current_path
 ./create_folders.sh $current_path
+./copy_files.sh $current_path
 
 ./install_npm.sh $current_path
 ./install_pnpm.sh $current_path
