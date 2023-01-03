@@ -21,4 +21,4 @@ cd app
 # * Project initialization
 # **************************************************
 
-pnpm init -y
+pnpm init

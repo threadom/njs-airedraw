@@ -1,5 +1,5 @@
 # **************************************************
-# * Test argument and move to root path 
+# * Test argument and move to app path 
 # **************************************************
 
 if [ $# -eq 0 ]; then
@@ -15,8 +15,13 @@ else
     exit 1
 fi
 
+cd app
+
 # **************************************************
-# * Copy default files
+# * Installation de Express
 # **************************************************
 
-cat ./install/default_files > ./app
+npm install --save express
+pnpm install --save express
+npm install --save handlebars hbs
+pnpm install --save handlebars hbs

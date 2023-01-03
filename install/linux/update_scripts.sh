@@ -17,15 +17,4 @@ fi
 
 cd app
 
-# **************************************************
-# * Installation de Npm
-# **************************************************
-
-#sudo apt update
-#sudo apt install npm
-#npm cache clean --force
-#npm update -g npm
-sudo snap install node
-npm install -g npm
-
-npm init -y
+node ../install/merge_json.js package.json ../install/package.json
